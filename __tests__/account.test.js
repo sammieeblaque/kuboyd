@@ -27,29 +27,29 @@ beforeAll(() => {
 //   });
 // });
 
-describe("Endpoint for getting by account number", () => {
-  test("get account by account number", async (done) => {
-    const response = await request(app).get(`/account?accNumber=${9074840226}`);
-    expect(response.statusCode).toBe(200);
-    expect(typeof response.body).toBe("object");
-    expect(response.body).toHaveProperty("uuid");
-    expect(response.body).toHaveProperty("accountName");
-    expect(response.body).toHaveProperty("accountNumber");
-    expect(response.body).toHaveProperty("status");
-    expect(response.body).toHaveProperty("accountBalance");
-    done();
-  });
-});
+// describe("Endpoint for getting by account number", () => {
+//   test("get account by account number", async (done) => {
+//     const response = await request(app).get(`/account?accNumber=${9074840226}`);
+//     expect(response.statusCode).toBe(200);
+//     expect(typeof response.body).toBe("object");
+//     expect(response.body).toHaveProperty("uuid");
+//     expect(response.body).toHaveProperty("accountName");
+//     expect(response.body).toHaveProperty("accountNumber");
+//     expect(response.body).toHaveProperty("status");
+//     expect(response.body).toHaveProperty("accountBalance");
+//     done();
+//   });
+// });
 
-describe("Endpoint for gettin all the accounts", () => {
-  test("get all the accounts", async (done) => {
-    const response = await request(app).get("/accounts");
-    expect(typeof response.body).toBe("object");
-    expect(response.statusCode).toBe(200);
-    done();
-  });
-});
+// describe("Endpoint for gettin all the accounts", () => {
+//   test("get all the accounts", async (done) => {
+//     const response = await request(app).get("/accounts");
+//     expect(typeof response.body).toBe("object");
+//     expect(response.statusCode).toBe(200);
+//     done();
+//   });
+// });
 
-afterAll((done) => {
-  db.disconnect(done);
-});
+// afterAll((done) => {
+//   db.disconnect(done);
+// });
