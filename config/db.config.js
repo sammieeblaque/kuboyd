@@ -21,7 +21,7 @@ module.exports = {
 
   connect_test: () => {
     try {
-      mongoose.connect(MONGO_TEST, {
+      mongoose.connect("mongodb://localhost:27017/kuboyd", {
         useNewUrlParser: true,
         useUnifiedTopology: true,
         useCreateIndex: true,

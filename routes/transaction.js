@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const transaction = require("../controllers/transaction.controller");
+const transaction = require("../controllers/transaction.controllers");
 
 router.post("/credit", transaction.creditAccount);
 router.post("/debit", transaction.debitAccount);
