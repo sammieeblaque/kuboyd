@@ -1,8 +1,8 @@
-const faker = require("faker");
+const { faker } = require("@faker-js/faker");
 
 module.exports = {
   generateAccount: () => {
-    const accountNumber = faker.finance.account(10);
+    const accountNumber = faker.finance(10);
     return accountNumber;
   },
 };
