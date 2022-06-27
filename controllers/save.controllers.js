@@ -12,7 +12,6 @@ module.exports = {
       Account,
       phone
     );
-    // console.log(balance);
     try {
       if (balance >= 0 && balance <= 50) {
         res.json({

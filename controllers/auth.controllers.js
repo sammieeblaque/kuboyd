@@ -71,7 +71,6 @@ module.exports = {
         }
       } catch (error) {
         res.json({ message: error });
-        // console.log(error);
       }
     }
   },
