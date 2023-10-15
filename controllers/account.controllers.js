@@ -27,7 +27,6 @@ module.exports = {
   },
 
   getAccounts: async (req, res) => {
-    // console.log(req.decoded);
     try {
       const accounts = await DB.find(Account);
       res.json(
@@ -104,8 +103,6 @@ module.exports = {
             "This account does not exist. Check and reconfirm the number",
         });
       }
-
-      // console.log(account.accountOwner);
     } catch (error) {
       console.error("Cannot get Account number.. Try again later");
     }
